@@ -75,6 +75,7 @@ const router = createBrowserRouter([
       {
         path: "addBeneficiaries",
         element: <AddBeneficiaries />,
+        loader: () => fetch("http://localhost:5000/beneficiaries-data"),
       },
       {
         path: "addProjects",

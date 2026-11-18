@@ -64,7 +64,6 @@ const AddProjects = () => {
        
         if (data.insertedId) {
            
-            // console.log("Data object found:", data.insertedId);
             toast.success(`${formData.projectsName} is added successfully`);
             // navigate('/dashboard/addProjects');
             setFormData({ projectsName: "" });
